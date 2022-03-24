@@ -20,9 +20,9 @@ body {
   margin-bottom:25px;
 }
 .intro {
-  width:90%;
+  width:1296px;
   height:500px;
-  margin-left: 5%;
+  margin-left: 72px;
   border: 3px solid white;
   border-radius: 8px;
   background-color: #fff;
@@ -32,14 +32,14 @@ body {
   z-index:0;
 }
 .two_blocks {
-  width:100%;
+  width:1440px;
   height:500px;
   display:flex;
   z-index:0;
 
 }
 .links {
-  width:50%;
+  width:648px;
   height:500px;
 
   z-index: 0;
@@ -109,7 +109,7 @@ a img:hover{
 }
 footer {
   display:block;
-  width:100%;
+  width:1440px;
   background-color:white;
   border-top: 2px solid white;
   border-radius:15px;
