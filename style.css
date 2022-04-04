@@ -155,6 +155,9 @@ img my_photo:hover {
 h2 {
   text-decoration:underline;
 }
+.ab_me {
+  line-height: 40px;
 
+}
 .my_photo:hover {
   animation: shake 1000ms ease-in-out forwards;
