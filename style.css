@@ -1,139 +1,148 @@
-body {
-  min-width: 960px;
-  font-family: 'Montserrat', sans-serif;
-  font-size:15px;
-  line-height:1.6;
-  margin:0;
-  background-image:url("images/intro.jpg");
-  background-size:cover;
+* {
+  box-sizing: border-box;
 }
-.Ilyas{
-  width:300px;
-  height:25px;
-  top:0;
-  margin-top:-7px;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  background-image: url("images/intro.jpg");
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.Ilyas {
+  width: 300px;
+  top: 0;
   border: 3px solid white;
   background-color: white;
-  border-radius: 7px;
-  margin-left:570px;
-  text-align:center;
-  padding-top:5px;
-  margin-bottom:25px;
+  border-radius: 0 0 7px 7px;
+  text-align: center;
+  margin: 0 auto 25px;
 }
+
 .intro {
-  width:1296px;
-  height:500px;
-  margin-left: 72px;
-  border: 3px solid white;
-  border-radius: 8px;
-  background-color: #fff;
-  border-left:none;
-  border-right:none;
-  opacity:1;
-  z-index:0;
-}
-.two_blocks {
-  width:1440px;
-  height:500px;
-  display:flex;
-  z-index:0;
-
-}
-.links {
-  width:648px;
-  height:500px;
-
+  width: 100%;
+  padding: 0 20px;
+  opacity: 1;
   z-index: 0;
 }
-.bio{
-  width:630px;
-  height:500px;
+
+.two_blocks {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  z-index: 0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.bio {
   color: black;
-  font-size:21px;
-
-}
-.photo{
-  margin-left:655px;
-  margin-top:20px;
-  margin-bottom:20px;
-
-}
-.my_photo{
-    height:130px;
-    width:130px;
-    border-radius:65px;
-    border:2px solid white;
+  font-size: 21px;
+  flex: 1;
 }
 
-a.lefthanded{
-  width: 150px;
+.photo {
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.my_photo {
+  height: 130px;
+  width: 130px;
+  border-radius: 65px;
+  border: 2px solid white;
+}
+
+.links a {
+  display: block;
+}
+
+.links img {
+  width: 170px;
   height: 170px;
-  display: inline-block;
-  margin:40px 120px;
-  z-index:1;
-}
-a.ok {
-  width: 150px;
-  height: 170px;
-  display: inline-block;
-  margin:40px 70px;
-  margin-left: 0;
-  z-index:1;
+
 }
 
 .intro_image {
   width: 150px;
   height: 170px;
-  z-index:0;
+  z-index: 0;
 }
 
-a img:hover{
-  -webkit-animation: show_icon 1s 1;
-  animation: show_icon 1s 1;
+a img {
+  transition: all 0.3s;
 }
-@keyframes show_icon{
-  0%{
+
+a img:hover {
+  transform: translateY(-7px);
+  /*-webkit-animation: show_icon 1s 1;*/
+  /*animation: show_icon 1s 1;*/
+}
+
+@keyframes show_icon {
+  0% {
     transform: translateY(0px);
   }
-  50%{
+  50% {
     transform: translateY(-7px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
-.free{
-  font-weight:600;
-  font-size:22px;
-  margin-top:15px;
-  margin-bottom:15px;
+
+.free {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: block;
 }
+
 footer {
-  display:block;
-  width:1440px;
-  background-color:white;
+  width: 100%;
+  background-color: white;
   border-top: 2px solid white;
-  border-radius:15px;
-  height:45px;
-  bottom:0;
-  position:fixed;
-  margin-bottom:-15px;
-  padding-bottom:15px;
+  border-radius: 15px 15px 0 0;
+  height: 45px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer_contacts {
-  width:30px;
-  height:30px;
-  margin-top:8px;
-  justify-content:space-between;
-  margin-left:370px;
+
+footer a {
+  width: fit-content;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
 }
-.text_footer{
-  text-align:center;
-  color:black;
-  text-decoration:none;
-  font-size:19px;
+
+footer img {
+  width: 30px;
+  height: 30px;
+  justify-content: space-between;
 }
-img my_photo:hover {
+
+img .my_photo:hover {
   animation: shake 500ms ease-in-out forwards;
 }
 
@@ -142,22 +151,50 @@ img my_photo:hover {
     transform: rotate(0deg);
   }
   50% {
-   transform: rotate(-30deg);
+    transform: rotate(-30deg);
   }
   70% {
     transform: rotate(30deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
 }
+
 h2 {
-  text-decoration:underline;
+  text-decoration: underline;
 }
+
 .ab_me {
   line-height: 40px;
 
 }
+
 .my_photo:hover {
   animation: shake 1000ms ease-in-out forwards;
+}
+
+@media (max-width: 1100px) {
+  .two_blocks {
+    padding: 20px;
+    display: block;
+    width: 100%;
+  }
+
+  .links {
+    row-gap: 20px;
+  }
+
+  .two_blocks img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .two_blocks img {
+    width: 55px;
+    height: 55px;
+  }
+}
