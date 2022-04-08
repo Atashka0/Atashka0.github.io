@@ -87,20 +87,6 @@ a img {
 
 a img:hover {
   transform: translateY(-7px);
-  /*-webkit-animation: show_icon 1s 1;*/
-  /*animation: show_icon 1s 1;*/
-}
-
-@keyframes show_icon {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-7px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
 }
 
 .free {
@@ -192,14 +178,8 @@ h2 {
 
 @media (max-width: 600px) {
   footer {
-    width: 100%;
+    
     display: block;
-    align-items: center;
-    justify-content: center;
-  }
-
-  footer a {
-
     align-items: center;
     justify-content: center;
   }
