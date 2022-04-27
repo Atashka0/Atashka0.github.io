@@ -12,6 +12,11 @@ body {
   overflow-x: hidden;
 }
 
+.wrapper {
+  min-height: calc(100vh - 73px);
+  margin-bottom: 20px;
+}
+
 .Ilyas {
   width: 300px;
   top: 0;
@@ -102,7 +107,6 @@ footer {
   background-color: white;
   border-top: 2px solid white;
   border-radius: 15px 15px 0 0;
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
